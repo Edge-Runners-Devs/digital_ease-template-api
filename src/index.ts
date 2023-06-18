@@ -1,7 +1,6 @@
-import { App } from './app';
-import { AuthRoutes } from './routes/auth.routes';
-import { IndexRoutes } from './routes/index.routes';
+import { App } from './app'
+import { IndexRoutes } from './routes/index.routes'
 
-const app = new App([new IndexRoutes(), new AuthRoutes()]);
+const app = new App([new IndexRoutes()])
 
-app.listen();
+app.listen()
