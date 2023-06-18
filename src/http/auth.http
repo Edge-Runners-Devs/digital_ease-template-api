@@ -1,0 +1,27 @@
+@route=http://localhost:{{$dotenv %PORT}}
+@test_mail={{$dotenv %TEST_MAIL}}
+@test_password={{$dotenv %TEST_PASSWORD}}
+
+
+GET {{route}}/healthcheck
+content-type: application/json
+###
+
+POST {{route}}/auth/login
+content-type: application/json
+
+{
+  "email": "{{test_mail}}",
+  "password": "{{test_password}}"
+}
+###
+
+POST {{route}}/auth/signup
+Content-Type: application/json
+
+{
+  "email": "{{test_mail}}",
+  "password": "{{test_password}}",
+  "first_name": "Angel ",
+  "last_name": "Negrete"
+}
