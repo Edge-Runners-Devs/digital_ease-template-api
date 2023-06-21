@@ -1,5 +1,5 @@
 {
-	"name": "1234",
+	"name": "digital-ease_template-api",
 	"version": "0.0.1",
 	"main": "index.js",
 	"license": "MIT",
@@ -33,7 +33,5 @@
 		"pg-hstore": "^2.3.4",
 		"sequelize": "^6.31.1",
 		"sequelize-cli": "^6.6.0"
-	},
-	"repository": "https://github.com/Edge-Runners-Devs/digital_ease-template-api.git",
-	"author": "Erick Julian Bravo Guzman <71684060+julianbrv10@users.noreply.github.com>"
+	}
 }
