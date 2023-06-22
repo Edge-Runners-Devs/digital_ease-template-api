@@ -26,7 +26,11 @@ export class App {
   }
   private initDatabase(): void {
     try {
-      Database.sync();
+      console.log('DB process starting...');
+
+      Database.sync().then(() => {
+        console.log('DB connected');
+      });
     } catch (error) {
       console.log('DB not connected');
     }
